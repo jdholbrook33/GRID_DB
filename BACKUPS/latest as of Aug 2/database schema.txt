@@ -1,0 +1,78 @@
+CREATE TABLE OrderDetail (
+        ID INTEGER PRIMARY KEY,
+        OrderDetailID TEXT,
+        OrderID TEXT,
+        EmployeeID TEXT,
+        ProductID TEXT,
+        Quantity INTEGER,
+        DateAdded TEXT
+)
+
+CREATE TABLE "ProductUnit" (
+"ID" INTEGER,
+  "ProductUnitCode" INTEGER,
+  "ProductUnit" TEXT,
+  "ProductUnitShort" TEXT
+)
+
+CREATE TABLE "StateNames" (
+"ID" INTEGER,
+  "StateName" TEXT,
+  "Abbreviation" TEXT
+)
+
+CREATE TABLE "Supplier" (
+"ID" INTEGER,
+  "SupplierID" INTEGER,
+  "SupplierName" TEXT,
+  "SupplierAddress" TEXT,
+  "SupplierCity" INTEGER,
+  "SupplierState" REAL,
+  "SupplierZipCode" TEXT,
+  "ContactName1" TEXT,
+  "ContactName2" TEXT,
+  "ContactEmail1" TEXT,
+  "ContactEmail2" TEXT,
+  "ContactPhone1" TEXT,
+  "ContactPhone2" TEXT,
+  "Website" TEXT,
+  "AccountNumber" REAL,
+  "TaxID" REAL
+)
+
+CREATE TABLE "Orders" (
+"ID" INTEGER,
+  "OrderID" INTEGER,
+  "MondayOrderID" INTEGER,
+  "OrderDate" TEXT,
+  "WorkDescription" TEXT,
+  "WorkAddress" TEXT,
+  "WorkState" TEXT,
+  "WorkZipCode" INTEGER
+)
+
+CREATE TABLE "Inventory" (
+"ID" INTEGER,
+  "ProductName" TEXT,
+  "ProductDescription" TEXT,
+  "productID" TEXT,
+  "QuantityOnHand" INTEGER,
+  "ProductUnit" TEXT,
+  "ProductUnitCost" INTEGER,
+  "SupplierID" INTEGER
+)
+
+CREATE TABLE "Employees" (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    EmployeeID TEXT,
+    EmployeeName TEXT,
+    EmployeeAddress TEXT,
+    EmployeeCity TEXT,  -- Corrected from EmployeeCIty
+    EmployeeState TEXT,
+    EmployeeZipcode TEXT,
+    EmployeePhone TEXT,
+    EmployeeEmail TEXT,
+    EmployeeActive INTEGER,
+    DateOfHire DATE  -- New field
+)
+

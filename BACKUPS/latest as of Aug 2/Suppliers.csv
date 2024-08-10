@@ -1,0 +1,6 @@
+ID,SupplierID,SupplierName,SupplierAddress,SupplierCity,SupplierState,SupplierZipCode,ContactName1,ContactEmail1,ContactPhone1,ContactName2,ContactEmail2,ContactPhone2,Website,AccountNumber,TaxID
+1,1001,Acme Electronics,123 Main St,Springfield,IL,62701,John Doe,john.doe@acme.com,217-555-1234,Jane Smith,jane.smith@acme.com,217-555-5678,www.acmeelectronics.com,ACME001,12-3456789
+2,1002,TechParts Inc.,456 Oak Ave,Chicago,IL,60601,Bob Johnson,bob@techparts.com,312-555-2345,,,,www.techparts.com,TECH002,98-7654321
+3,1003,Global Gadgets,789 Pine Rd,Peoria,IL,61602,Alice Brown,alice@globalgadgets.com,309-555-3456,Chuck Davis,chuck@globalgadgets.com,309-555-7890,www.globalgadgets.com,GLOB003,45-6789012
+4,1004,Midwest Manufacturers,321 Elm St,Rockford,IL,61101,Eve Wilson,eve@midwestmfg.com,815-555-4567,,,,www.midwestmfg.com,MIDW004,78-9012345
+5,1005,Quality Components,654 Birch Ln,Champaign,IL,61820,Frank Miller,frank@qualitycomp.com,217-555-5678,Grace Lee,grace@qualitycomp.com,217-555-9012,www.qualitycomponents.com,QUAL005,23-4567890

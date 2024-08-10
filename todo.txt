@@ -1,0 +1,25 @@
+1. Make a button for "create new or new record" just to make it obvious what they should do. It can actually be the "add row" function but as a button.
+2. Bring in the OrderDetail table and figure out how to make it show correctly.. I mean organized by WorkOrder number with something to set each work order number group apart. Color or spaces or something.
+3. More data verification. EmployeeID needs to be 4 digits, no more, no less and no letters allowed and there are others such as zip code.
+4. What about a rollover function that as the mouse rolls over a row, the entire row is magnified a little.
+5. I like the colors but we'll need to work on them just a bit and what about some cool animation in the background? Like falling snow or Lissajous curve.
+6. Set it up so that it runs when the machine is fired up and is available on any computer in the network.
+7. We will eventually have to have authentication or even levels such that you can't view, can view but not edit, can edit some, can edit all. 
+8. State Name drop down so the user can pick the state and the certified abbreviation is actually saved, the table is there already, StateNames.
+9. ProductUnit will need to be a drop down in the Inventory table page to keep the Units standardized.
+
+
+SELECT 
+  sql
+FROM 
+  sqlite_master
+WHERE 
+  type = 'table';
+
+  CREATE TABLE ProductUnit_new (
+    ID INTEGER,
+    ProductUnitCode INTEGER,
+    ProductUnit TEXT,
+    ProductUnitShort TEXT,
+    PRIMARY KEY("ID")
+);
